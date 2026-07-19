@@ -1,0 +1,1035 @@
+/**
+ * YUI 3.5.0 - reset.css (http://developer.yahoo.com/yui/3/cssreset/)
+ * http://cssreset.com
+ * Copyright 2012 Yahoo! Inc. All rights reserved.
+ * http://yuilibrary.com/license/
+ */
+/*
+	TODO will need to remove settings on HTML since we can't namespace it.
+	TODO with the prefix, should I group by selector or property for weight savings?
+*/
+html {
+  color: #000;
+  background: #FFF;
+}
+
+/*
+	TODO remove settings on BODY since we can't namespace it.
+*/
+/*
+	TODO test putting a class on HEAD.
+		- Fails on FF.
+*/
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+fieldset,
+img {
+  border: 0;
+}
+
+/*
+	TODO think about hanlding inheritence differently, maybe letting IE6 fail a bit...
+*/
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+caption,
+th {
+  text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+q:before,
+q:after {
+  content: '';
+}
+
+abbr,
+acronym {
+  border: 0;
+  font-variant: normal;
+}
+
+/* to preserve line-height and selector appearance */
+sup {
+  vertical-align: text-top;
+}
+
+sub {
+  vertical-align: text-bottom;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*to enable resizing for IE*/
+input,
+textarea,
+select {
+  *font-size: 100%;
+}
+
+/*because legend doesn't inherit in IE */
+legend {
+  color: #000;
+}
+
+/* YUI CSS Detection Stamp */
+#yui3-css-stamp.cssreset {
+  display: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+input, textarea, select {
+  border: none;
+  border-radius: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: none;
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+input::-ms-expand {
+  display: none;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+textarea {
+  resize: none;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.l-header {
+  width: 100%;
+  overflow: hidden;
+}
+
+.l-header__image--section {
+  background-image: url("images/drink/ogasutaYAT4M3A8100_TP_V.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  opacity: 0.8;
+  background-position: 50% 50%;
+}
+
+.l-header__image--title {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+          transform: translateY(-50%) translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.651);
+  width: 500px;
+  padding: 20px;
+}
+
+.l-header__image--cafeName {
+  font-size: 50px;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: tbcinergothic-std, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+@media (max-width: 767px) {
+  .l-header__image--cafeName {
+    font-size: 35px;
+  }
+}
+
+.l-header__image__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 7px;
+}
+
+.l-header__image--logoitem {
+  width: 50px;
+}
+
+@media (max-width: 767px) {
+  .l-header__image--logoitem {
+    width: 38px;
+  }
+}
+
+.l-main {
+  width: 100%;
+  overflow: hidden;
+}
+
+.p-main__section {
+  width: 100%;
+}
+
+@media (min-width: 1180px) {
+  .p-main__section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (max-width: 1179px) and (min-width: 766px) {
+  .p-main__section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (max-width: 767px) {
+  .p-main__section {
+    display: block;
+    height: auto;
+    padding: 20px;
+    background-color: #fff8e3;
+  }
+}
+
+.p-main__section--even {
+  width: 100%;
+}
+
+@media (min-width: 1180px) {
+  .p-main__section--even {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (max-width: 1179px) and (min-width: 766px) {
+  .p-main__section--even {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (max-width: 767px) {
+  .p-main__section--even {
+    display: block;
+    height: auto;
+    padding: 20px;
+    background-color: #f1ebd7;
+  }
+}
+
+@media (min-width: 1180px) {
+  .p-main__section--aboutImageSection,
+  .p-main__section--drinkImageSection,
+  .p-main__section--foodImageSection,
+  .p-main__section--accessImageSection,
+  .p-main__section--newsImageSection {
+    width: 50%;
+    position: relative;
+  }
+}
+
+@media (max-width: 1179px) and (min-width: 766px) {
+  .p-main__section--aboutImageSection,
+  .p-main__section--drinkImageSection,
+  .p-main__section--foodImageSection,
+  .p-main__section--accessImageSection,
+  .p-main__section--newsImageSection {
+    width: 50%;
+    position: relative;
+  }
+}
+
+@media (max-width: 767px) {
+  .p-main__section--aboutImageSection,
+  .p-main__section--drinkImageSection,
+  .p-main__section--foodImageSection,
+  .p-main__section--accessImageSection,
+  .p-main__section--newsImageSection {
+    position: relative;
+    width: 100%;
+    height: 320px;
+  }
+}
+
+@media (min-width: 1180px) {
+  .p-main__section--aboutImageItem,
+  .p-main__section--drinkImageItem,
+  .p-main__section--foodImageItem,
+  .p-main__section--accessImageItem,
+  .p-main__section--newsImageItem {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 1179px) and (min-width: 766px) {
+  .p-main__section--aboutImageItem,
+  .p-main__section--drinkImageItem,
+  .p-main__section--foodImageItem,
+  .p-main__section--accessImageItem,
+  .p-main__section--newsImageItem {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .p-main__section--aboutImageItem,
+  .p-main__section--drinkImageItem,
+  .p-main__section--foodImageItem,
+  .p-main__section--accessImageItem,
+  .p-main__section--newsImageItem {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.p-main__section--detail {
+  background-color: #fff8e3;
+}
+
+@media (min-width: 1180px) {
+  .p-main__section--detail {
+    width: 50%;
+    padding: 120px 50px;
+  }
+}
+
+@media (max-width: 1179px) and (min-width: 766px) {
+  .p-main__section--detail {
+    width: 50%;
+    padding: 100px 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .p-main__section--detail {
+    width: 100%;
+    padding: 20px 10px;
+  }
+}
+
+.p-main__section--detailEven {
+  background-color: #f1ebd7;
+}
+
+@media (min-width: 1180px) {
+  .p-main__section--detailEven {
+    width: 50%;
+    padding: 120px 50px;
+  }
+}
+
+@media (max-width: 1179px) and (min-width: 766px) {
+  .p-main__section--detailEven {
+    width: 50%;
+    padding: 100px 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .p-main__section--detailEven {
+    width: 100%;
+    padding: 20px 10px;
+  }
+}
+
+.p-main__section--detailTitle {
+  font-family: tbcinergothic-std, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #70533b;
+  text-align: center;
+}
+
+@media (min-width: 1180px) {
+  .p-main__section--detailTitle {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 1179px) and (min-width: 766px) {
+  .p-main__section--detailTitle {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .p-main__section--detailTitle {
+    font-size: 26px;
+  }
+}
+
+.p-main__section--detailText {
+  font-family: tbcinergothic-std, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #70533b;
+  text-align: center;
+}
+
+.p-main__section--detailText span {
+  display: inline-block;
+}
+
+@media (min-width: 1180px) {
+  .p-main__section--detailText {
+    font-size: 20px;
+    margin-top: 40px;
+    line-height: 280%;
+  }
+}
+
+@media (max-width: 1179px) and (min-width: 766px) {
+  .p-main__section--detailText {
+    font-size: 15px;
+    margin-top: 25px;
+    line-height: 280%;
+  }
+}
+
+@media (max-width: 767px) {
+  .p-main__section--detailText {
+    font-size: 13px;
+    margin-top: 10px;
+    line-height: 180%;
+  }
+}
+
+.p-main__moreButtonSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+@media (min-width: 1180px) {
+  .p-main__moreButtonSection {
+    margin-top: 80px;
+  }
+}
+
+@media (max-width: 1179px) and (min-width: 766px) {
+  .p-main__moreButtonSection {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .p-main__moreButtonSection {
+    margin-top: 20px;
+  }
+}
+
+.p-main__moreButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #a58b76;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 3px 5px #463325;
+          box-shadow: 0 3px 5px #463325;
+}
+
+@media (min-width: 1180px) {
+  .p-main__moreButton {
+    width: 120px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 1179px) and (min-width: 766px) {
+  .p-main__moreButton {
+    width: 85px;
+    padding: 7px;
+  }
+}
+
+@media (max-width: 767px) {
+  .p-main__moreButton {
+    width: 75px;
+    padding: 5px;
+  }
+}
+
+@media (min-width: 1180px) {
+  .p-mainAccess__moreButtonSection {
+    display: none;
+  }
+}
+
+@media (max-width: 1179px) and (min-width: 766px) {
+  .p-mainAccess__moreButtonSection {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .p-mainAccess__moreButtonSection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+
+.p-main__moreButton__text {
+  font-family: tbcinergothic-std, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #ffffff;
+}
+
+@media (min-width: 1180px) {
+  .p-main__moreButton__text {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1179px) and (min-width: 766px) {
+  .p-main__moreButton__text {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .p-main__moreButton__text {
+    font-size: 15px;
+  }
+}
+
+.p-main__moreButton__arrow {
+  left: 3px;
+  border-top: 2px solid #ffffff;
+  border-right: 2px solid #ffffff;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+@media (min-width: 1180px) {
+  .p-main__moreButton__arrow {
+    margin-left: 15px;
+    width: 11px;
+    height: 11px;
+  }
+}
+
+@media (max-width: 1179px) and (min-width: 766px) {
+  .p-main__moreButton__arrow {
+    margin-left: 10px;
+    width: 7px;
+    height: 7px;
+  }
+}
+
+@media (max-width: 767px) {
+  .p-main__moreButton__arrow {
+    margin-left: 5px;
+    width: 4px;
+    height: 4px;
+  }
+}
+
+.p-main__accessSection--cafeName {
+  font-family: tbcinergothic-std, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #70533b;
+}
+
+@media (min-width: 1180px) {
+  .p-main__accessSection--cafeName {
+    font-size: 30px;
+    padding-left: 40px;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 1179px) and (min-width: 766px) {
+  .p-main__accessSection--cafeName {
+    font-size: 20px;
+    padding-left: 40px;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .p-main__accessSection--cafeName {
+    font-size: 19px;
+    padding-left: 5px;
+    margin-top: 13px;
+  }
+}
+
+.p-main__section--accessText {
+  margin-top: 15px;
+  font-family: tbcinergothic-std, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #70533b;
+  padding-left: 50px;
+}
+
+.p-main__section--accessText span {
+  display: inline-block;
+}
+
+@media (min-width: 1180px) {
+  .p-main__section--accessText {
+    font-size: 20px;
+    line-height: 200%;
+  }
+}
+
+@media (max-width: 1179px) and (min-width: 766px) {
+  .p-main__section--accessText {
+    font-size: 15px;
+    line-height: 200%;
+  }
+}
+
+@media (max-width: 767px) {
+  .p-main__section--accessText {
+    font-size: 13px;
+    line-height: 135%;
+    padding-left: 20px;
+    margin-top: 5px;
+  }
+}
+
+.p-main__access--iconSection {
+  width: 100%;
+  margin-top: 15px;
+  margin-left: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 1180px) {
+  .p-main__access--instagramIcon {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media (max-width: 1179px) and (min-width: 766px) {
+  .p-main__access--instagramIcon {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+@media (max-width: 767px) {
+  .p-main__access--instagramIcon {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+@media (min-width: 1180px) {
+  .p-main__access--facebookIcon {
+    width: 35px;
+    height: 35px;
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 1179px) and (min-width: 766px) {
+  .p-main__access--facebookIcon {
+    width: 30px;
+    height: 30px;
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .p-main__access--facebookIcon {
+    width: 18px;
+    height: 18px;
+    margin-left: 12px;
+  }
+}
+
+.p-mainSection__newsDetail {
+  padding-left: 30px;
+}
+
+@media (min-width: 1180px) {
+  .p-mainSection__newsDetail {
+    margin-top: 70px;
+  }
+}
+
+@media (max-width: 1179px) and (min-width: 766px) {
+  .p-mainSection__newsDetail {
+    margin-top: 35px;
+  }
+}
+
+@media (max-width: 767px) {
+  .p-mainSection__newsDetail {
+    margin-top: 20px;
+    padding-left: 0px;
+  }
+}
+
+@media (min-width: 1180px) {
+  .p-mainSection__newsDetail--section {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 1179px) and (min-width: 766px) {
+  .p-mainSection__newsDetail--section {
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 767px) {
+  .p-mainSection__newsDetail--section {
+    margin-bottom: 5px;
+  }
+}
+
+.p-mainSection__newsDetail--section:last-child {
+  margin-bottom: 0;
+}
+
+.p-mainSection__newsDetail--date {
+  color: #70533b;
+}
+
+@media (min-width: 1180px) {
+  .p-mainSection__newsDetail--date {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1179px) and (min-width: 766px) {
+  .p-mainSection__newsDetail--date {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 767px) {
+  .p-mainSection__newsDetail--date {
+    font-size: 13px;
+  }
+}
+
+.p-mainSection__newsDetail--title {
+  margin-bottom: 20px;
+  color: #70533b;
+  font-family: tbcinergothic-std, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+@media (min-width: 1180px) {
+  .p-mainSection__newsDetail--title {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1179px) and (min-width: 766px) {
+  .p-mainSection__newsDetail--title {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .p-mainSection__newsDetail--title {
+    font-size: 15px;
+  }
+}
+
+.p-mainSection__newsDetail--title:last-child {
+  margin-bottom: 0;
+}
+
+.p-main__access--googlemapSection {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 767px) {
+  .p-main__access--googlemapSection {
+    margin-top: 25px;
+  }
+}
+
+@media (min-width: 1180px) {
+  .p-main__access--googleMap {
+    width: 500px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 1179px) and (min-width: 766px) {
+  .p-main__access--googleMap {
+    width: 310px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 767px) {
+  .p-main__access--googleMap {
+    display: none;
+  }
+}
+
+.l-footer {
+  background-color: #f7edd9;
+  width: 100%;
+  overflow: hidden;
+}
+
+@media (min-width: 1180px) {
+  .l-footer {
+    padding: 50px;
+  }
+}
+
+@media (max-width: 1179px) and (min-width: 766px) {
+  .l-footer {
+    padding: 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  .l-footer {
+    padding: 20px;
+  }
+}
+
+.l-footer__titleSection {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.l-footer__title {
+  color: #70533b;
+  font-family: tbcinergothic-std, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+@media (min-width: 1180px) {
+  .l-footer__title {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 1179px) and (min-width: 766px) {
+  .l-footer__title {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .l-footer__title {
+    font-size: 27px;
+  }
+}
+
+.l-footer__cafeLogo {
+  margin-left: 20px;
+}
+
+@media (min-width: 1180px) {
+  .l-footer__cafeLogo {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+@media (max-width: 1179px) and (min-width: 766px) {
+  .l-footer__cafeLogo {
+    width: 38px;
+    height: 38px;
+  }
+}
+
+@media (max-width: 767px) {
+  .l-footer__cafeLogo {
+    width: 28px;
+    height: 28px;
+    margin-left: 10px;
+  }
+}
+
+.l-footer__copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #70533b;
+  margin-top: 10px;
+  font-family: tbcinergothic-std, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+@media (min-width: 1180px) {
+  .l-footer__copyright {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1179px) and (min-width: 766px) {
+  .l-footer__copyright {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .l-footer__copyright {
+    font-size: 10px;
+  }
+}
+/*# sourceMappingURL=index.css.map */
